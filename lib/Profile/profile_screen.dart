@@ -11,7 +11,7 @@ class ProfileScreen extends StatelessWidget {
         children: [
           const Icon(Icons.account_circle, size: 80, color: Colors.grey),
           const SizedBox(height: 16),
-          Text(AuthService.currentUser?.email ?? "Guest User", style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
+          Text(AuthService.currentUser?.email ?? "Guest User"),
           const SizedBox(height: 32),
           OutlinedButton.icon(
             onPressed: () => AuthService.logout(),
